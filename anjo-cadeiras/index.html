@@ -110,7 +110,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;op
 .top.scrolled{background:rgba(251,248,242,.88);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(29,58,44,.08)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand img{width:52px;height:auto}
+.brand img{width:34px;height:auto;mix-blend-mode:multiply}
 .brand b{font-family:var(--serif);font-weight:400;font-size:1.45rem;color:var(--forest);letter-spacing:.02em;line-height:1}
 .brand small{display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:3px}
 nav ul{display:flex;gap:30px;list-style:none;align-items:center}
@@ -127,7 +127,7 @@ nav a:not(.btn):hover::after{transform:scaleX(1);transform-origin:left}
 .menu-btn span{display:block;width:24px;height:2px;background:var(--forest);margin:5px auto;transition:.3s}
 
 /* ===== stair progress rail ===== */
-.rail{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:90;width:34px;height:260px;pointer-events:none}
+.rail{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:90;width:34px;height:260px;pointer-events:none}
 .rail svg{width:100%;height:100%;overflow:visible}
 .rail .track{fill:none;stroke:rgba(29,58,44,.15);stroke-width:2}
 .rail .fill{fill:none;stroke:var(--leaf);stroke-width:2.5;stroke-linecap:round}
@@ -312,6 +312,7 @@ footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:
 .wa-float svg{width:28px;height:28px}
 
 /* responsive */
+@media (max-width:1380px){.rail{display:none}}
 @media (max-width:980px){
   .hero-grid,.mission-grid,.prod,.prod:nth-child(even),.service-grid,.faq-grid,.contact-grid{grid-template-columns:1fr}
   .prod:nth-child(even) .prod-img{order:0}
@@ -348,7 +349,7 @@ footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:
 <header class="top" id="top">
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="ANJO Cadeiras Elevatórias, início">
-      <img src="https://static.wixstatic.com/media/1755d6_8c732a042c7841409095ae4efc74240d~mv2.png/v1/fill/w_120,h_120,al_c,q_85,enc_auto/logo.png" alt="Logótipo ANJO com asa verde" width="52" height="52">
+      <img src="https://static.wixstatic.com/media/1755d6_8c732a042c7841409095ae4efc74240d~mv2.png/v1/crop/x_0,y_10,w_355,h_520/fill/w_96,h_140,al_c,q_90/asa.png" alt="Logótipo ANJO: asa verde" width="34" height="50">
       <span><b>ANJO</b><small>Cadeiras Elevatórias</small></span>
     </a>
     <nav id="nav" aria-label="Navegação principal">
